@@ -1,0 +1,22 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main(){
+  int n;
+  cin >> n;
+  vector<int> v(n);
+  for (int& x : v) {
+    cin >> x;
+  }
+
+  sort(begin(v), end(v), [](int l, int r) { return abs(l) < abs(r); });
+
+  for (int x : v) {
+    cout << x << " ";
+  }
+
+  return 0;
+}
