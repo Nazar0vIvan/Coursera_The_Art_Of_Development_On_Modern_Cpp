@@ -1,10 +1,4 @@
 #include <iostream>
-#include <ostream>
-#include <istream>
-#include <sstream>
-#include <vector>
-#include <set>
-#include <map>
 
 using namespace std;
 
