@@ -16,8 +16,8 @@ public:
     m_numerator = numerator / c;
     m_denominator = denominator / c;
     if (m_denominator < 0) {
-      m_denominator = -denominator;
-      m_numerator = -numerator;
+      m_denominator = -m_denominator;
+      m_numerator = -m_numerator;
     }
   }
 
