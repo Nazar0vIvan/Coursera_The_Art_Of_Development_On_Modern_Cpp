@@ -1,4 +1,4 @@
-# Анаграммы
+# Справочник столиц
 
 ### Условие
  
@@ -6,10 +6,10 @@
 
 На вход программе поступают следующие запросы:
 
-* __CHANGE_CAPITAL__ ___country new_capital___ — изменение столицы страны ___country___ на ___new_capital___, либо добавление такой страны с такой столицей, если раньше её не было.
-* __RENAME__ ___old_country_name new_country_name___ — переименование страны из ___old_country_name___ в ___new_country_name___.
-* __ABOUT__ ___country___ — вывод столицы страны ___country___.
-* __DUMP__ — вывод столиц всех стран.
+* **CHANGE_CAPITAL** ***country new_capital*** — изменение столицы страны ***country*** на ***new_capital***, либо добавление такой страны с такой столицей, если раньше её не было.
+* **RENAME** ***old_country_name new_country_name*** — переименование страны из ***old_country_name*** в ***new_country_name***.
+* **ABOUT** ***country*** — вывод столицы страны ***country***.
+* **DUMP** — вывод столиц всех стран.
 
 ### Формат ввода
 
@@ -19,26 +19,26 @@
 
 Выведите результат обработки каждого запроса:
 
-В ответ на запрос __CHANGE_CAPITAL__ country ___new_capital___ выведите
+В ответ на запрос **CHANGE_CAPITAL** country ***new_capital*** выведите
 
-* __Introduce new country ___country___ with capital ___new_capital_____, если страны ___country___ раньше не существовало;
-* __Country ___country___ hasn't changed its capital__, если страна ___country___ до текущего момента имела столицу ___new_capital___;
-* __Country ___country___ has changed its capital from ___old_capital___ to ___new_capital_____, если страна ___country___ до текущего момента имела столицу ___old_capital___, название которой не совпадает с названием ___new_capital___.
+* **Introduce new country ***country*** with capital ***new_capital*****, если страны ***country*** раньше не существовало;
+* **Country ***country*** hasn't changed its capital**, если страна ***country*** до текущего момента имела столицу ***new_capital***;
+* **Country ***country*** has changed its capital from ***old_capital*** to ***new_capital*****, если страна ***country*** до текущего момента имела столицу ***old_capital***, название которой не совпадает с названием ***new_capital***.
 
-В ответ на запрос __RENAME__ ___old_country_name___ ___new_country_name___ выведите
+В ответ на запрос **RENAME** ***old_country_name*** ***new_country_name*** выведите
 
-* __Incorrect rename, skip__, если новое название страны совпадает со старым, страна ___old_country_name___ не существует или страна ___new_country_name___ уже существует;
-* __Country ___old_country_name___ with capital ___capital___ has been renamed to ___new_country_name_____, если запрос корректен и страна имеет столицу ___capital___.
+* **Incorrect rename, skip**, если новое название страны совпадает со старым, страна ***old_country_name*** не существует или страна ***new_country_name*** уже существует;
+* **Country ***old_country_name*** with capital ***capital*** has been renamed to ***new_country_name*****, если запрос корректен и страна имеет столицу ***capital***.
 
-В ответ на запрос __ABOUT__ ___country___ выведите
+В ответ на запрос **ABOUT** ***country*** выведите
 
-* __Country ___country___ doesn't exist__, если страны с названием ___country___ не существует;
-* __Country ___country___ has capital capital__, если страна ___country___ существует и имеет столицу ___capital___.
+* **Country ***country*** doesn't exist**, если страны с названием ***country*** не существует;
+* **Country ***country*** has capital capital**, если страна ***country*** существует и имеет столицу ***capital***.
 
-В ответ на запрос __DUMP__ выведите
+В ответ на запрос **DUMP** выведите
 
-* __There are no countries in the world__, если пока не было добавлено ни одной страны;
-* последовательность пар вида ___country/capital___, описывающую столицы всех стран, если в мире уже есть хотя бы одна страна. При выводе последовательности пары указанного вида необходимо упорядочить по названию страны и разделять между собой пробелом.
+* **There are no countries in the world**, если пока не было добавлено ни одной страны;
+* последовательность пар вида ***country/capital***, описывающую столицы всех стран, если в мире уже есть хотя бы одна страна. При выводе последовательности пары указанного вида необходимо упорядочить по названию страны и разделять между собой пробелом.
 
 ### Пример 1
 
