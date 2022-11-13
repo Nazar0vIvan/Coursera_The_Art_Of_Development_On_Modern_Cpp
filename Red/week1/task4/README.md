@@ -67,4 +67,4 @@ void UpdateTicket(AirlineTicket& ticket, const map<string, string>& updates) {
 
 [update_field.cpp](source/update_field.cpp)
 
-[airline_ticket.cpp](source/airline_ticket.cpp)
+[airline_ticket.h](source/airline_ticket.h)
