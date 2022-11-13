@@ -60,6 +60,7 @@ void SortTickets(vector<AirlineTicket>& tixs) {
 * содержит определения операторов, необходимых для использования классов `Date` и `Time` в алгоритме сортировки и макросе `ASSERT_EQUAL` (формат вывода в поток можете выбрать произвольный)
 
 [airline_ticket.cpp](source/airline_ticket.cpp)
+[sort_by.cpp](source/sort_by.cpp)
 
 
 
