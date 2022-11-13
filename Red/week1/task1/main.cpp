@@ -1,25 +1,14 @@
-#include "test_runner.h"
-
 #include <string>
 #include <vector>
 #include <list>
 #include <forward_list>
 #include <numeric>
 #include <iterator>
-#include <algorithm>
+
+#include "test_runner.h"
+#include "max_element_if.cpp"
 
 using namespace std;
-
-template<typename ForwardIterator, typename UnaryPredicate>
-ForwardIterator max_element_if(ForwardIterator first, ForwardIterator last, UnaryPredicate pred) {
-  ForwardIterator maxIt = find_if(first, last, pred);
-  for (ForwardIterator cur = maxIt; cur != last; ++cur) {
-    if (cur != maxIt && pred(*cur) && *maxIt < *cur) {
-      maxIt = cur;
-    }
-  }
-  return maxIt;
-}
 
 void TestUniqueMax() {
     auto IsEven = [](int x) {return x % 2 == 0;};

@@ -17,7 +17,7 @@ ForwardIterator max_element_if(ForwardIterator first, ForwardIterator last, Unar
 
 Заготовка решения:
 
-[max_element_if.cpp](max_element_if.cpp)
+[max_element_if.cpp](source/max_element_if.cpp)
 
 
 P.S. В файле `max_element_if.cpp` используется заголовочный файл `test_runner.h`. Это юнит-тест фреймворк, который мы разработали в «Жёлтом поясе по C++».
