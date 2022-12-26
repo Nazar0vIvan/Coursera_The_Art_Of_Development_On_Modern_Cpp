@@ -5,8 +5,6 @@
 
 using namespace std;
 
-#define DAY_IN_SECONDS 86400
-
 class HotelManager {
 public:
   void Book(int64_t time, const string& hotel_name, int client_id, int room_count) {
