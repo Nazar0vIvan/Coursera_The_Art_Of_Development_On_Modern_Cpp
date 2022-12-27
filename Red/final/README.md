@@ -108,7 +108,7 @@ void TestSearchServer(istream& document_input, istream& query_input,
 
 Смотрите юнит-тесты в заготовке решения для более подробного ознакомления с тем, как должен работать класс `SearchServer`.
 
-[course_project_first_part.cpp](source/course_project_first_part.cpp)
+[course_project_first_part](source/)
 
 ## Вторая часть задачи
 
