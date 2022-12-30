@@ -1,5 +1,6 @@
 # Искусство разработки на современном C++
-[Специализация Искусство разработки на современном C++](https://www.coursera.org/specializations/c-plus-plus-modern-development/) 
+[Специализация Искусство разработки на современном C++](https://www.coursera.org/specializations/c-plus-plus-modern-development/)
+
 by Moscow Institute of Physics and Technology & Yandex
 
 [![Специализация Искусство разработки на современном C++](https://github.com/m3nf1s/Modern-Cplusplus/blob/master/logo.jpg)](https://www.coursera.org/specializations/c-plus-plus-modern-development/)
