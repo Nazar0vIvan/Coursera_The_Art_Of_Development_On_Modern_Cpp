@@ -9,22 +9,21 @@
 * для `pair` в квадрат нужно возвести каждый элемент пары.
 
 ```c++
-1   // Пример вызова функции
-2   vector<int> v = {1, 2, 3};
-3   cout << "vector:";
-4   for (int x : Sqr(v)) {
-5     cout << ' ' << x;
-6   }
-7   cout << endl;
-8
-9   map<int, pair<int, int>> map_of_pairs = {
-10    {4, {2, 2}},
-11    {7, {4, 3}}
-12  };
-13  cout << "map of pairs:" << endl;
-14  for (const auto& x : Sqr(map_of_pairs)) {
-15    cout << x.first << ' ' << x.second.first << ' ' << x.second.second << endl;
-16  }
+// Пример вызова функции
+vector<int> v = {1, 2, 3};
+cout << "vector:";
+for (int x : Sqr(v)) {
+  cout << ' ' << x;
+}
+cout << endl;
+map<int, pair<int, int>> map_of_pairs = {
+  {4, {2, 2}},
+  {7, {4, 3}}
+};
+cout << "map of pairs:" << endl;
+for (const auto& x : Sqr(map_of_pairs)) {
+  cout << x.first << ' ' << x.second.first << ' ' << x.second.second << endl;
+}
 ```
 
 Код выше должен вывести
