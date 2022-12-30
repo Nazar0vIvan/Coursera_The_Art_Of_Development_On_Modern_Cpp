@@ -16,27 +16,26 @@
 #### Код
 
 ```c++
-1   int main() {
-2     Person person("Polina", "Sergeeva", 1960);
-3     for (int year : {1959, 1960}) {
-4       cout << person.GetFullNameWithHistory(year) << endl;
-5     }
-6  
-7     person.ChangeFirstName(1965, "Appolinaria");
-8     person.ChangeLastName(1967, "Ivanova");
-9     for (int year : {1965, 1967}) {
-10      cout << person.GetFullNameWithHistory(year) << endl;
-11    }
-12
-13    return 0;
-14  }
-```
+int main() {
+  Person person("Polina", "Sergeeva", 1960);
+  for (int year : {1959, 1960}) {
+    cout << person.GetFullNameWithHistory(year) << endl;
+  }
+  
+  person.ChangeFirstName(1965, "Appolinaria");
+  person.ChangeLastName(1967, "Ivanova");
+  for (int year : {1965, 1967}) {
+    cout << person.GetFullNameWithHistory(year) << endl;
+  }
 
+  return 0;
+}
+```
 #### Вывод
 
 ```objectivec
-1   No person
-2   Polina Sergeeva
-3   Appolinaria (Polina) Sergeeva
-4   Appolinaria (Polina) Ivanova (Sergeeva)
+No person
+Polina Sergeeva
+Appolinaria (Polina) Sergeeva
+Appolinaria (Polina) Ivanova (Sergeeva)
 ```

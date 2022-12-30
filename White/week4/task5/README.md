@@ -1,4 +1,4 @@
-# Работа с файлами
+# Работа с файлами - 2
 
 ### Условие
  
@@ -13,17 +13,17 @@
 #### input.txt
 
 ```objectivec
-1   Keep calm
-1   and
-3   learn C++
+Keep calm
+and
+learn C++
 ```
 
 #### stdout
 
 ```objectivec
-1   Keep calm
-2   and
-3   learn C++
+Keep calm
+and
+learn C++
 ```
 
 ### Часть 2
@@ -35,15 +35,15 @@
 #### input.txt
 
 ```objectivec
-1   Keep calm
-2   and
-3   learn C++
+Keep calm
+and
+learn C++
 ```
 
 #### output.txt
 
 ```objectivec
-1   Keep calm
-2   and
-3   learn C++
+Keep calm
+and
+learn C++
 ```

@@ -10,9 +10,9 @@
 
 ### Формат ввода
 
-Сначала вводится количество запросов `Q`, затем `Q` описаний запросов.
+Сначала вводится количество запросов *Q*, затем *Q* описаний запросов.
 
-Каждый запрос представляет собой положительное количество остановок `N`, за которым следуют разделённые пробелом `N` названий остановок соответствующего маршрута (не обязательно различных). Названия остановок состоят лишь из латинских букв и символов подчёркивания.
+Каждый запрос представляет собой положительное количество остановок *N*, за которым следуют разделённые пробелом *N* названий остановок соответствующего маршрута (не обязательно различных). Названия остановок состоят лишь из латинских букв и символов подчёркивания.
 
 ### Формат вывода
 
@@ -25,20 +25,19 @@
 #### Ввод
 
 ```objectivec
-1   5
-2   2 Marushkino Kokoshkino
-3   1 Kokoshkino
-4   2 Marushkino Kokoshkino
-5   2 Kokoshkino Marushkino
-6   2 Kokoshkino Kokoshkino
+5
+2 Marushkino Kokoshkino
+1 Kokoshkino
+2 Marushkino Kokoshkino
+2 Kokoshkino Marushkino
+2 Kokoshkino Kokoshkino
 ```
-
 #### Вывод
 
 ```objectivec
-1   New bus 1
-2   New bus 2
-3   Already exists for 1
-4   Already exists for 1
-5   Already exists for 2
+New bus 1
+New bus 2
+Already exists for 1
+Already exists for 1
+Already exists for 2
 ```

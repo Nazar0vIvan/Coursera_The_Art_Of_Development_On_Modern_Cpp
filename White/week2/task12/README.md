@@ -53,7 +53,6 @@
 6   CHANGE_CAPITAL USSR Moscow
 7   DUMP
 ```
-
 #### Вывод
 
 ```objectivec
@@ -64,96 +63,93 @@
 5   Country USSR has changed its capital from Petrograd to Moscow
 6   USSR/Moscow
 ```
-
 ### Пример 2
 
 #### Ввод
 
 ```objectivec
-1   24
-2   RENAME FakeCountry FarFarAway
-3   ABOUT FarFarAway
-4   DUMP
-5   CHANGE_CAPITAL TsardomOfRussia Moscow
-6   CHANGE_CAPITAL TsardomOfRussia Moscow
-7   CHANGE_CAPITAL ColonialBrazil Salvador
-8   CHANGE_CAPITAL TsardomOfRussia SaintPetersburg
-9   RENAME TsardomOfRussia RussianEmpire
-10  CHANGE_CAPITAL RussianEmpire Moscow
-11  CHANGE_CAPITAL RussianEmpire SaintPetersburg
-12  CHANGE_CAPITAL ColonialBrazil RioDeJaneiro
-13  DUMP
-14  RENAME ColonialBrazil EmpireOfBrazil
-15  ABOUT RussianEmpire
-16  RENAME EmpireOfBrazil UnitedStatesOfBrazil
-17  CHANGE_CAPITAL RussianEmpire Petrograd
-18  RENAME RussianEmpire RussianRepublic
-19  RENAME RussianRepublic USSR
-20  CHANGE_CAPITAL USSR Moscow
-21  CHANGE_CAPITAL UnitedStatesOfBrazil Brasilia
-22  RENAME UnitedStatesOfBrazil FederativeRepublicOfBrazil
-23  ABOUT RussianEmpire
-24  DUMP
-25  RENAME USSR USSR
+24
+RENAME FakeCountry FarFarAway
+ABOUT FarFarAway
+DUMP
+CHANGE_CAPITAL TsardomOfRussia Moscow
+CHANGE_CAPITAL TsardomOfRussia Moscow
+CHANGE_CAPITAL ColonialBrazil Salvador
+CHANGE_CAPITAL TsardomOfRussia SaintPetersburg
+RENAME TsardomOfRussia RussianEmpire
+CHANGE_CAPITAL RussianEmpire Moscow
+CHANGE_CAPITAL RussianEmpire SaintPetersburg
+CHANGE_CAPITAL ColonialBrazil RioDeJaneiro
+DUMP
+RENAME ColonialBrazil EmpireOfBrazil
+ABOUT RussianEmpire
+RENAME EmpireOfBrazil UnitedStatesOfBrazil
+CHANGE_CAPITAL RussianEmpire Petrograd
+RENAME RussianEmpire RussianRepublic
+RENAME RussianRepublic USSR
+CHANGE_CAPITAL USSR Moscow
+CHANGE_CAPITAL UnitedStatesOfBrazil Brasilia
+RENAME UnitedStatesOfBrazil FederativeRepublicOfBrazil
+ABOUT RussianEmpire
+DUMP
+RENAME USSR USSR
 ```
-
 #### Вывод
 
 ```objectivec
-1   Incorrect rename, skip
-2   Country FarFarAway doesn't exist
-3   There are no countries in the world
-4   Introduce new country TsardomOfRussia with capital Moscow
-5   Country TsardomOfRussia hasn't changed its capital
-6   Introduce new country ColonialBrazil with capital Salvador
-7   Country TsardomOfRussia has changed its capital from Moscow to 8    SaintPetersburg
-8   Country TsardomOfRussia with capital SaintPetersburg has been renamed to RussianEmpire
-9   Country RussianEmpire has changed its capital from SaintPetersburg to Moscow
-10  Country RussianEmpire has changed its capital from Moscow to SaintPetersburg
-11  Country ColonialBrazil has changed its capital from Salvador to RioDeJaneiro
-12  ColonialBrazil/RioDeJaneiro RussianEmpire/SaintPetersburg
-13  Country ColonialBrazil with capital RioDeJaneiro has been renamed to EmpireOfBrazil
-14  Country RussianEmpire has capital SaintPetersburg
-15  Country EmpireOfBrazil with capital RioDeJaneiro has been renamed to UnitedStatesOfBrazil
-16  Country RussianEmpire has changed its capital from SaintPetersburg to Petrograd
-17  Country RussianEmpire with capital Petrograd has been renamed to RussianRepublic
-18  Country RussianRepublic with capital Petrograd has been renamed to USSR
-19  Country USSR has changed its capital from Petrograd to Moscow
-20  Country UnitedStatesOfBrazil has changed its capital from RioDeJaneiro to Brasilia
-21  Country UnitedStatesOfBrazil with capital Brasilia has been renamed to FederativeRepublicOfBrazil
-22  Country RussianEmpire doesn't exist
-23  FederativeRepublicOfBrazil/Brasilia USSR/Moscow
-24  Incorrect rename, skip
+Incorrect rename, skip
+Country FarFarAway doesn't exist
+There are no countries in the world
+Introduce new country TsardomOfRussia with capital Moscow
+Country TsardomOfRussia hasn't changed its capital
+Introduce new country ColonialBrazil with capital Salvador
+Country TsardomOfRussia has changed its capital from Moscow to 8    SaintPetersburg
+Country TsardomOfRussia with capital SaintPetersburg has been renamed to RussianEmpire
+Country RussianEmpire has changed its capital from SaintPetersburg to Moscow
+Country RussianEmpire has changed its capital from Moscow to SaintPetersburg
+Country ColonialBrazil has changed its capital from Salvador to RioDeJaneiro
+ColonialBrazil/RioDeJaneiro RussianEmpire/SaintPetersburg
+Country ColonialBrazil with capital RioDeJaneiro has been renamed to EmpireOfBrazil
+Country RussianEmpire has capital SaintPetersburg
+Country EmpireOfBrazil with capital RioDeJaneiro has been renamed to UnitedStatesOfBrazil
+Country RussianEmpire has changed its capital from SaintPetersburg to Petrograd
+Country RussianEmpire with capital Petrograd has been renamed to RussianRepublic
+Country RussianRepublic with capital Petrograd has been renamed to USSR
+Country USSR has changed its capital from Petrograd to Moscow
+Country UnitedStatesOfBrazil has changed its capital from RioDeJaneiro to Brasilia
+Country UnitedStatesOfBrazil with capital Brasilia has been renamed to FederativeRepublicOfBrazil
+Country RussianEmpire doesn't exist
+FederativeRepublicOfBrazil/Brasilia USSR/Moscow
+Incorrect rename, skip
 ```
 ### Пример 3
 
 #### Ввод
 
 ```objectivec
-1   10
-2   CHANGE_CAPITAL RussianEmpire Petrograd
-3   RENAME USSR RussianEmpire
-4   DUMP
-5   ABOUT USSR
-6   DUMP
-7   RENAME RussianEmpire RussianEmpire
-8   DUMP
-9   CHANGE_CAPITAL UnitedStatesOfBrazil Brasilia
-10  RENAME RussianEmpire UnitedStatesOfBrazil
-11  DUMP 
+10
+CHANGE_CAPITAL RussianEmpire Petrograd
+RENAME USSR RussianEmpire
+DUMP
+ABOUT USSR
+DUMP
+RENAME RussianEmpire RussianEmpire
+DUMP
+CHANGE_CAPITAL UnitedStatesOfBrazil Brasilia
+RENAME RussianEmpire UnitedStatesOfBrazil
+DUMP 
 ```
-
 #### Вывод
 
 ```objectivec
-1   Introduce new country RussianEmpire with capital Petrograd
-2   Incorrect rename, skip
-3   RussianEmpire/Petrograd
-4   Country USSR doesn't exist
-5   RussianEmpire/Petrograd
-6   Incorrect rename, skip
-7   RussianEmpire/Petrograd
-8   Introduce new country UnitedStatesOfBrazil with capital Brasilia
-9   Incorrect rename, skip
-10  RussianEmpire/Petrograd UnitedStatesOfBrazil/Brasilia
+Introduce new country RussianEmpire with capital Petrograd
+Incorrect rename, skip
+RussianEmpire/Petrograd
+Country USSR doesn't exist
+RussianEmpire/Petrograd
+Incorrect rename, skip
+RussianEmpire/Petrograd
+Introduce new country UnitedStatesOfBrazil with capital Brasilia
+Incorrect rename, skip
+RussianEmpire/Petrograd UnitedStatesOfBrazil/Brasilia
 ```

@@ -1,23 +1,22 @@
 # Перемещение строк
 
-#### Условие
+### Условие
  
 Напишите функцию `MoveStrings`, которая принимает два вектора строк, `source` и `destination`, и дописывает все строки из первого вектора в конец второго. После выполнения функции вектор `source` должен оказаться пустым.
 
 Чтобы очистить содержимое вектора, надо вызвать у него метод `clear`:
 
 ```c++
-1   vector<string> words = {"hey", "hi"};
-2   words.clear();
-3   // Теперь вектор words пуст
+vector<string> words = {"hey", "hi"};
+words.clear();
+// Теперь вектор words пуст
 ```
-
-#### Пример
+### Пример
 
 ``` c++
-1   vector<string> source = {"a", "b", "c"};
-2   vector<string> destination = {"z"};
-3   MoveStrings(source, destination);
-4   // source должен оказаться пустым
-5   // destination должен содержать строки "z", "a", "b", "c" именно в таком порядке
+vector<string> source = {"a", "b", "c"};
+vector<string> destination = {"z"};
+MoveStrings(source, destination);
+// source должен оказаться пустым
+// destination должен содержать строки "z", "a", "b", "c" именно в таком порядке
 ```

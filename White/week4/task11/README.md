@@ -9,20 +9,23 @@
 Напомним, что вам надо реализовать интерфейс
 
 ```c++
-1   class Rational {
-2   public:
-3     Rational();
-4     Rational(int numerator, int denominator);
-5
-6     int Numerator() const;
-7     int Denominator() const;
-8   };
-```
+class Rational {
+public:
+  Rational();
+  Rational(int numerator, int denominator);
 
+  int Numerator() const;
+  int Denominator() const;
+};
+```
 и оператор деления для класса `Rational`
 
 ```c++
-1   Rational operator / (const Rational& lhs, const Rational& rhs);
+Rational operator / (const Rational& lhs, const Rational& rhs);
 ```
 
 Так же, как и в задачах на перегрузку операторов, вам будет предложен файл с заготовкой кода. Функция `main` в этом файле содержит ряд юнит-тестов, которые позволят вам проверить свою реализацию. При проверке вашего решения оно будет тестироваться на более полном наборе тестов, так что успешное прохождение всех юнит-тестов не гарантирует, что ваша реализация будет зачтена.
+
+#### Шаблон программы:
+
+[rational_throw.cpp](source/rational_throw.cpp)

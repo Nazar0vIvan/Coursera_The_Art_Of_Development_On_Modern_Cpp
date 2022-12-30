@@ -5,22 +5,21 @@
 Реализуйте класс для человека, поддерживающий историю изменений человеком своих фамилии и имени.
 
 ```c++
-1   class Person {
-2   public:
-3     void ChangeFirstName(int year, const string& first_name) {
-4       // добавить факт изменения имени на first_name в год year
-5     }
-6     void ChangeLastName(int year, const string& last_name) {
-7       // добавить факт изменения фамилии на last_name в год year
-8     }
-9     string GetFullName(int year) {
-10      // получить имя и фамилию по состоянию на конец года year
-11    }
-12  private:
-13    // приватные поля
-14  };
+class Person {
+public:
+  void ChangeFirstName(int year, const string& first_name) {
+    // добавить факт изменения имени на first_name в год year
+  }
+  void ChangeLastName(int year, const string& last_name) {
+    // добавить факт изменения фамилии на last_name в год year
+  }
+  string GetFullName(int year) {
+    // получить имя и фамилию по состоянию на конец года year
+  }
+private:
+  // приватные поля
+};
 ```
-
 Считайте, что в каждый год может произойти не более одного изменения фамилии и не более одного изменения имени. При этом с течением времени могут открываться всё новые факты из прошлого человека, поэтому года́ в последовательных вызовах методов `ChangeLastName` и `ChangeFirstName` не обязаны возрастать.
 
 Гарантируется, что все имена и фамилии непусты.
@@ -36,37 +35,35 @@
 #### Код
 
 ```c++
-1   int main() {
-2     Person person;
-3     
-4     person.ChangeFirstName(1965, "Polina");
-5     person.ChangeLastName(1967, "Sergeeva");
-6     for (int year : {1900, 1965, 1990}) {
-7       cout << person.GetFullName(year) << endl;
-8     }
-9  
-10    person.ChangeFirstName(1970, "Appolinaria");
-11    for (int year : {1969, 1970}) {
-12      cout << person.GetFullName(year) << endl;
-13    }
-14    
-15    person.ChangeLastName(1968, "Volkova");
-16    for (int year : {1969, 1970}) {
-17      cout << person.GetFullName(year) << endl;
-18    }
-19  
-20    return 0;
-21  }
+int main() {
+  Person person;
+  
+  person.ChangeFirstName(1965, "Polina");
+  person.ChangeLastName(1967, "Sergeeva");
+  for (int year : {1900, 1965, 1990}) {
+    cout << person.GetFullName(year) << endl;
+  }
+  
+  person.ChangeFirstName(1970, "Appolinaria");
+  for (int year : {1969, 1970}) {
+    cout << person.GetFullName(year) << endl;
+  }  
+  person.ChangeLastName(1968, "Volkova");
+  for (int year : {1969, 1970}) {
+    cout << person.GetFullName(year) << endl;
+  }
+ 
+  return 0;
+}
 ```
-
 #### Вывод
 
 ```objectivec
-1   Incognito
-2   Polina with unknown last name
-3   Polina Sergeeva
-4   Polina Sergeeva
-5   Appolinaria Sergeeva
-6   Polina Volkova
-7   Appolinaria Volkova
+Incognito
+Polina with unknown last name
+Polina Sergeeva
+Polina Sergeeva
+Appolinaria Sergeeva
+Polina Volkova
+Appolinaria Volkova
 ```

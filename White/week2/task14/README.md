@@ -29,18 +29,18 @@
 #### Ввод
 
 ```objectivec
-1   4
-2   2 Marushkino Kokoshkino
-3   1 Kokoshkino
-4   2 Marushkino Kokoshkino
-5   2 Kokoshkino Marushkino
+4
+2 Marushkino Kokoshkino
+1 Kokoshkino
+2 Marushkino Kokoshkino
+2 Kokoshkino Marushkino
 ```
 
 #### Вывод
 
 ```objectivec
-1   New bus 1
-2   New bus 2
-3   Already exists for 1
-4   New bus 3
+New bus 1
+New bus 2
+Already exists for 1
+New bus 3
 ```

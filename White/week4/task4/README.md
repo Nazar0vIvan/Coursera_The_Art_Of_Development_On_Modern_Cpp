@@ -1,4 +1,4 @@
-# Работа с файлами
+# Работа с файлами - 1
 
 ### Условие
  
@@ -13,19 +13,17 @@
 #### input.txt
 
 ```objectivec
-1   Keep calm
-1   and
-3   learn C++
+Keep calm
+and
+learn C++
 ```
-
 #### stdout
 
 ```objectivec
-1   Keep calm
-2   and
-3   learn C++
+Keep calm
+and
+learn C++
 ```
-
 ### Часть 2
 
 Снова считайте все содержимое файла `input.txt`, но на этот раз выведите его в файл `output.txt`. Точно так же гарантируется, что содержимое файла `input.txt` заканчивается переводом строки. 
@@ -35,15 +33,14 @@
 #### input.txt
 
 ```objectivec
-1   Keep calm
-2   and
-3   learn C++
+Keep calm
+and
+learn C++
 ```
-
 #### output.txt
 
 ```objectivec
-1   Keep calm
-2   and
-3   learn C++
+Keep calm
+and
+learn C++
 ```

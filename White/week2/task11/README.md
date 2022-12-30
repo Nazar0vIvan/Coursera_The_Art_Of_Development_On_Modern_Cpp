@@ -22,19 +22,16 @@
 
 #### Ввод
 
-``` c++
-1   3
-2   eat tea
-3   find search
-4   master stream
-5
+```c++
+3
+eat tea
+find search
+master stream
 ```
-
 #### Вывод
 
-``` c++
-1   YES
-2   NO
-3   YES
-4
+```c++
+YES
+NO
+YES
 ```

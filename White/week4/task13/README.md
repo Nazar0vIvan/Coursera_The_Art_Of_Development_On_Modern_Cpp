@@ -12,24 +12,25 @@
 Используя функцию `AskTimeServer`, напишите класс `TimeServer` со следующим интерфейсом:
 
 ```c++
-1   class TimeServer {
-2   public:
-3     string GetCurrentTime();
-4   private:
-5     string last_fetched_time = "00:00:00";
-6   };
+class TimeServer {
+public:
+  string GetCurrentTime();
+private:
+  string last_fetched_time = "00:00:00";
+};
 ```
-
 Метод `GetCurrentTime` должен вести себя так:
 
 * он должен вызвать функцию `AskTimeServer`, записать её результат в поле `last_fetched_time` и вернуть значение этого поля;
 * если `AskTimeServer` выбросила исключение `system_error`, метод `GetCurrentTime` должен его поймать и вернуть текущее значение поля `last_fetched_time`. Таким образом мы скрываем от пользователя сетевые проблемы, возвращая значение, которое было получено при последнем успешном обращении к серверу;
 * если `AskTimeServer` выбросила другое исключение, метод `GetCurrentTime` должен пробросить его дальше, потому что в рамках класса `TimeServer` мы не знаем, как обрабатывать проблемы, не связанные со сбоями сети.
 
-#### Как выполнять задание
+### Как выполнять задание
 
 Вам дан файл, содержащий заготовку класса `TimeServer`. В нём вам надо реализовать метод `GetCurrentTime` так, как описано выше. Файл содержит пустую функцию `AskTimeServer`. Для тестирования своей реализации вы можете пробовать добавлять разные команды в её тело:
 
 * возврат строки;
-* выброс исключения system_error (класс system_error принимает в конструкторе параметр типа error_code, поэтому самый простой способ выбросить это исключение — throw system_error(error_code());, подробнее см. https://en.cppreference.com/w/cpp/error/system_error );
+* выброс исключения system_error (класс system_error принимает в конструкторе параметр типа error_code, поэтому самый простой способ выбросить это исключение — throw system_error(error_code());, подробнее см. https://en.cppreference.com/w/cpp/error/system_error;
 * выброс других исключений.
+
+[time_server.cpp](source/time_server.cpp)

@@ -14,7 +14,7 @@
 
 ### Формат ввода
 
-Сначала вводится количество запросов `Q`, затем `Q` строк с описаниями запросов. Гарантируется, что в каждом запросе **CHECK** и **ADD** слова ***word1*** и ***word2*** различны. Все слова состоят лишь из латинских букв, цифр и символов подчёркивания.
+Сначала вводится количество запросов *Q*, затем *Q* строк с описаниями запросов. Гарантируется, что в каждом запросе **CHECK** и **ADD** слова ***word1*** и ***word2*** различны. Все слова состоят лишь из латинских букв, цифр и символов подчёркивания.
 
 ### Формат вывода
 
@@ -28,24 +28,23 @@
 #### Ввод
 
 ```objectivec
-1   8
-2   ADD program code
-3   COUNT cipher
-4   ADD code cipher
-5   COUNT code
-6   COUNT program
-7   CHECK code program
-8   CHECK program cipher
-9   CHECK cpp java
+8
+ADD program code
+COUNT cipher
+ADD code cipher
+COUNT code
+COUNT program
+CHECK code program
+CHECK program cipher
+CHECK cpp java
 ```
-
 #### Вывод
 
 ```objectivec
-1   0
-2   2
-3   1
-4   YES
-5   NO
-6   NO
+0
+2
+1
+YES
+NO
+NO
 ```

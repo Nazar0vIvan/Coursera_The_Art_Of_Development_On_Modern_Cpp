@@ -17,17 +17,17 @@
 #### Ввод
 
 ```objectivec
-1   6
-2   first
-3   second
-4   first
-5   third
-6   second
-7   second
+6
+first
+second
+first
+third
+second
+second
 ```
 
 #### Вывод
 
 ```objectivec
-1   3
+3
 ```

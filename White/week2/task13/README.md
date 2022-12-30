@@ -34,32 +34,31 @@
 #### Ввод
 
 ```objectivec
-1   10
-2   ALL_BUSES
-3   BUSES_FOR_STOP Marushkino
-4   STOPS_FOR_BUS 32K
-5   NEW_BUS 32 3 Tolstopaltsevo Marushkino Vnukovo
-6   NEW_BUS 32K 6 Tolstopaltsevo Marushkino Vnukovo Peredelkino Solntsevo Skolkovo
-7   BUSES_FOR_STOP Vnukovo
-8   NEW_BUS 950 6 Kokoshkino Marushkino Vnukovo Peredelkino Solntsevo Troparyovo
-9   NEW_BUS 272 4 Vnukovo Moskovsky Rumyantsevo Troparyovo
-10  STOPS_FOR_BUS 272
-11  ALL_BUSES
+10
+ALL_BUSES
+BUSES_FOR_STOP Marushkino
+STOPS_FOR_BUS 32K
+NEW_BUS 32 3 Tolstopaltsevo Marushkino Vnukovo
+NEW_BUS 32K 6 Tolstopaltsevo Marushkino Vnukovo Peredelkino Solntsevo Skolkovo
+BUSES_FOR_STOP Vnukovo
+NEW_BUS 950 6 Kokoshkino Marushkino Vnukovo Peredelkino Solntsevo Troparyovo
+NEW_BUS 272 4 Vnukovo Moskovsky Rumyantsevo Troparyovo
+STOPS_FOR_BUS 272
+ALL_BUSES
 ```
-
 #### Вывод
 
 ```objectivec
-1   No buses
-2   No stop
-3   No bus
-4   32 32K
-5   Stop Vnukovo: 32 32K 950
-6   Stop Moskovsky: no interchange
-7   Stop Rumyantsevo: no interchange
-8   Stop Troparyovo: 950
-9   Bus 272: Vnukovo Moskovsky Rumyantsevo Troparyovo
-10  Bus 32: Tolstopaltsevo Marushkino Vnukovo
-11  Bus 32K: Tolstopaltsevo Marushkino Vnukovo Peredelkino Solntsevo Skolkovo
-12  Bus 950: Kokoshkino Marushkino Vnukovo Peredelkino Solntsevo Troparyovo
+No buses
+No stop
+No bus
+32 32K
+Stop Vnukovo: 32 32K 950
+Stop Moskovsky: no interchange
+Stop Rumyantsevo: no interchange
+Stop Troparyovo: 950
+Bus 272: Vnukovo Moskovsky Rumyantsevo Troparyovo
+Bus 32: Tolstopaltsevo Marushkino Vnukovo
+Bus 32K: Tolstopaltsevo Marushkino Vnukovo Peredelkino Solntsevo Skolkovo
+Bus 950: Kokoshkino Marushkino Vnukovo Peredelkino Solntsevo Troparyovo
 ```
