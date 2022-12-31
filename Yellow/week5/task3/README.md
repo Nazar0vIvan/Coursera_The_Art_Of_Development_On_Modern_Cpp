@@ -1,28 +1,10 @@
-# Отправка уведомлений
+# Набор фигур
 
 ### Условие
 
 Вам дана функция `main`, которая считывает из стандартного ввода команды по работе с набором геометрических фигур:  
 
-```c++ {.line-numbers}
-void SendSms(const string& number, const string& message);
-void SendEmail(const string& email, const string& message);
-```
-Разработайте: 
-
-1. Абстрактный базовый класс `INotifier`, у которого будет один чисто виртуальный метод `void Notify(const string& message)`.
-2. Класс `SmsNotifier`, который:
-   * является потомком класса `INotifier`;
-   * в конструкторе принимает один параметр типа `string` — номер телефона;
-   * переопределяет метод `Notify` и вызывает из него функцию `SendSms`.
-3. Класс `EmailNotifier`, который:
-   * является потомком класса `INotifier`;
-   * в конструкторе принимает один параметр типа `string` — адрес электронной почты;
-   * переопределяет метод `Notify` и вызывает из него функцию `SendEmail`.
-
-Пример кода для проверки
-
-```c++ {.line-numbers}
+```c++
 int main() {
   vector<shared_ptr<Figure>> figures;
   for (string line; getline(cin, line); ) {
@@ -63,7 +45,7 @@ int main() {
 
 #### Ввод
 
-```objectivec {.line-numbers}
+```objectivec
 ADD RECT 2 3
 ADD TRIANGLE 3 4 5
 ADD RECT 10 20
@@ -72,7 +54,7 @@ PRINT
 ```
 #### Вывод
 
-```objectivec {.line-numbers}
+```objectivec
 RECT 10.000 6.000
 TRIANGLE 12.000 6.000
 RECT 60.000 200.000

@@ -2,18 +2,20 @@
 
 ### Условие
 
-Вам дан заголовочный файл `sum_reverse_sort.h`, содержащий объявления трёх функций 
+Вам дан заголовочный файл `sum_reverse_sort.h`, содержащий объявления трёх функций
+
+[sum_reverse_sort.h](source/sum_reverse_sort.h)
 
 ```c++
-1   #pragma once
-2   #include <string>
-3   #include <vector>
-4
-5   using namespace std;
-6
-7   int Sum(int x, int y);
-8   string Reverse(string s);
-9   void Sort(vector<int>& nums);
+#pragma once
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int Sum(int x, int y);
+string Reverse(string s);
+void Sort(vector<int>& nums);
 ```
 
 Вам надо прислать cpp-файл, содержащий определения этих функций. 

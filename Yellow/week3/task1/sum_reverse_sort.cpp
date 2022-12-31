@@ -1,6 +1,6 @@
 #include <algorithm>
 
-#include "sum_reverse_sort.h"
+#include "source/sum_reverse_sort.h"
 
 using namespace std;
 

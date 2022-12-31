@@ -17,4 +17,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    sum_reverse_sort.h
+    source/sum_reverse_sort.h
+

@@ -7,8 +7,8 @@
 Пример использования функции
 
 ```c++
-1   map<int, string> m = {{0, "value"}};
-2   string& item = GetRefStrict(m, 0);
-3   item = "newvalue";
-4   cout << m[0] << endl; // выведет newvalue
+map<int, string> m = {{0, "value"}};
+string& item = GetRefStrict(m, 0);
+item = "newvalue";
+cout << m[0] << endl; // выведет newvalue
 ```

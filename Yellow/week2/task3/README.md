@@ -6,27 +6,28 @@
 
 Начать работу вы можете с шаблона, который содержит наш фреймворк юнит-тестов и заготовку класса: `test_person.cpp`
 
+[test_person.cpp](source/test_person.cpp)
+
 ### Условие задачи «Имена и фамилии — 1»
 
 Реализуйте класс для человека, поддерживающий историю изменений человеком своих фамилии и имени.
 
 ```c++
-1   class Person {
-2   public:
-3     void ChangeFirstName(int year, const string& first_name) {
-4       // добавить факт изменения имени на first_name в год year
-5     }
-6     void ChangeLastName(int year, const string& last_name) {
-7       // добавить факт изменения фамилии на last_name в год year
-8     }
-9     string GetFullName(int year) {
-10      // получить имя и фамилию по состоянию на конец года year
-11    }
-12  private:
-13    // приватные поля
-14  };
+class Person {
+public:
+  void ChangeFirstName(int year, const string& first_name) {
+    // добавить факт изменения имени на first_name в год year
+  }
+  void ChangeLastName(int year, const string& last_name) {
+    // добавить факт изменения фамилии на last_name в год year
+  }
+  string GetFullName(int year) {
+    // получить имя и фамилию по состоянию на конец года year
+  }
+private:
+  // приватные поля
+};
 ```
-
 Считайте, что в каждый год может произойти не более одного изменения фамилии и не более одного изменения имени. При этом с течением времени могут открываться всё новые факты из прошлого человека, поэтому года́ в последовательных вызовах методов `ChangeLastName` и `ChangeFirstName` не обязаны возрастать.
 
 Гарантируется, что все имена и фамилии непусты.

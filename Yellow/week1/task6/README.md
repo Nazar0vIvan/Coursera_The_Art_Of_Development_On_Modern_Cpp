@@ -25,16 +25,14 @@ for (const auto& x : Sqr(map_of_pairs)) {
   cout << x.first << ' ' << x.second.first << ' ' << x.second.second << endl;
 }
 ```
-
 Код выше должен вывести
 
 ```objectivec
-1   vector: 1 4 9
-2   map of pairs:
-3   4 4 4
-4   7 16 9
+vector: 1 4 9
+map of pairs:
+4 4 4
+7 16 9
 ```
-
 Функция должна корректно работать не только для контейнеров, состоящих из чисел, но и для составных объектов, например, векторов словарей пар чисел.
 
 Для успешной сдачи решения необходимо сделать предварительное объявление шаблонных функций перед всеми шаблонными функциями.
@@ -42,14 +40,14 @@ for (const auto& x : Sqr(map_of_pairs)) {
 Пример предварительного объявления шаблонной функции.
 
 ```c++
-1   // Предварительное объявление шаблонных функций
-2   template<typename T> T FuncA(T x);
-3   template<typename T> void FuncB(T x);
-4
-5   // Объявляем шаблонные функции
-6   template <typename T>
-7   T FuncA(T x) { /*...*/ }
-8
-9   template <typename T>
-10  void FuncB(T x) { /*...*/ }
+// Предварительное объявление шаблонных функций
+template<typename T> T FuncA(T x);
+template<typename T> void FuncB(T x);
+
+// Объявляем шаблонные функции
+template <typename T>
+T FuncA(T x) { /*...*/ }
+
+template <typename T>
+void FuncB(T x) { /*...*/ }
 ```

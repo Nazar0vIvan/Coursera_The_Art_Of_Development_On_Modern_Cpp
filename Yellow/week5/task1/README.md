@@ -5,29 +5,27 @@
 Дан следующий код:
 
 ```c++
-1   #include <iostream>
-2
-3   using namespace std;
-4
-5   class Animal {
-6   public:
-7       // ваш код
-8   
-9       const string Name;
-10  };
-11
-12
-13  class Dog {
-14  public:
-15      // ваш код
-16
-17      void Bark() {
-18        cout << Name << " barks: woof!" << endl;
-19      }
-20  };
+#include <iostream>
 
+using namespace std;
+
+class Animal {
+public:
+  // ваш код
+
+  const string Name;
+};
+
+class Dog {
+public:
+  // ваш код
+
+  void Bark() {
+    cout << Name << " barks: woof!" << endl;
+  }
+};
 ```
 Определите до конца тела классов, соблюдая следующие требования:
 
-* Класс `Dog` должен являться наследником класса `Animal`.
+* Класс `Dog` должен являться наследником класса `Animal`;
 * Конструктор класса `Dog` должен принимать параметр типа `string` и инициализировать им поле `Name` в классе `Animal`.

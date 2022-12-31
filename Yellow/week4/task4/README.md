@@ -7,42 +7,38 @@
 Гарантируется, что объекты типа `T` можно сравнивать с помощью операторов `==`, `!=`, `<` и `>`.
 
 ```c++
-1   template <typename T>
-2   void RemoveDuplicates(vector<T>& elements);
+template <typename T>
+void RemoveDuplicates(vector<T>& elements);
 ```
-
-### Пример кода
+#### Пример кода
 
 ```c++
-1   int main() {
-2     vector<int> v1 = { 6, 4, 7, 6, 4, 4, 0, 1 };
-3     RemoveDuplicates(v1);
-4     for (int x : v1) {
-5       cout << x << " ";
-6     }
-7     cout << endl;
-8  
-9     vector<string> v2 = { "C", "C++", "C++", "C", "C++" };
-10    RemoveDuplicates(v2);
-11    for (const string& s : v2) {
-12      cout << s << " ";
-13    }
-14    cout << endl;
-
-15    return 0;
-16  }
+int main() {
+  vector<int> v1 = {6, 4, 7, 6, 4, 4, 0, 1};
+  RemoveDuplicates(v1);
+  for (int x : v1) {
+    cout << x << " ";
+  }
+  cout << endl;
+  
+  vector<string> v2 = {"C", "C++", "C++", "C", "C++"};
+  RemoveDuplicates(v2);
+  for (const string& s : v2) {
+    cout << s << " ";
+  }
+  cout << endl;
+  return 0;
+}
 ```
-
-### Вывод
+#### Вывод
 
 ```objectivec
-1   6 4 7 0 1
-2   C++ C
+6 4 7 0 1
+C++ C
 ```
-
 Порядок элементов может быть другим, например:
 
 ```objectivec
-1   7 4 6 1 0
-2   C C++
+7 4 6 1 0
+C C++
 ```

@@ -5,9 +5,8 @@
 Напишите функцию `SplitIntoWords`, разбивающую строку на слова по пробелам.
 
 ```c++
-1   vector<string> SplitIntoWords(const string& s);
+vector<string> SplitIntoWords(const string& s);
 ```
-
 Гарантируется, что:
 
 * строка непуста;
@@ -15,28 +14,28 @@
 * первый и последний символы строки не являются пробелами;
 * строка не содержит двух пробелов подряд.
 
-### Пример кода
+#### Пример кода
 
 ```c++
-1   int main() {
-2     string s = "C Cpp Java Python";
-3
-4     vector<string> words = SplitIntoWords(s);
-5     cout << words.size() << " ";
-6     for (auto it = begin(words); it != end(words); ++it) {
-7       if (it != begin(words)) {
-8         cout << "/";
-9       }
-10      cout << *it;
-11    }
-12    cout << endl;
-13    
-14    return 0;
-15  }
-```
+int main()
+{
+  string s = "C Cpp Java Python";
 
-### Вывод
+  vector<string> words = SplitIntoWords(s);
+  cout << words.size() << " ";
+  for (auto it = begin(words); it != end(words); ++it) {
+    if (it != begin(words)) {
+      cout << "/";
+    }
+    cout << *it;
+  }
+  cout << endl;
+  
+  return 0;
+}
+```
+#### Вывод
 
 ```objectivec
-1   4 С/Cpp/Java/Python
+4 С/Cpp/Java/Python
 ```
