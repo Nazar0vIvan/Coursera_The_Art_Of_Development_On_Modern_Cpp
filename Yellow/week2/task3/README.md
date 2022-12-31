@@ -1,4 +1,4 @@
-# Тесты для функции GetDistinctRealRootCount
+# Тесты для класса Person
 
 ### Условие
 
