@@ -11,7 +11,7 @@ set<int>::const_iterator FindNearestElement(
 // set<int>::const_iterator —
 // тип итераторов для константного множества целых чисел
 ```
-### Пример кода
+#### Пример кода
 
 ```c++
 int main() {
@@ -29,7 +29,7 @@ int main() {
   return 0;
 }
 ```
-### Вывод
+#### Вывод
 
 ```objectivec
 1 4 4 6 6

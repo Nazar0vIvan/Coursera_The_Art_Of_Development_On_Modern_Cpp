@@ -15,7 +15,7 @@ pair<RandomIt, RandomIt> FindStartsWith(RandomIt range_begin, RandomIt range_end
 
 Поиск должен осуществляться за логарифмическую сложность — например, с помощью двоичного поиска.
 
-### Пример кода
+#### Пример кода
 
 ```c++
 int main() {
@@ -41,7 +41,7 @@ int main() {
   return 0;
 }
 ```
-### Вывод
+#### Вывод
 
 ```objectivec
 moscow murmansk

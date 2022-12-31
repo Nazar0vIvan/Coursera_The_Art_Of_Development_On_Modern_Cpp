@@ -23,13 +23,13 @@
 * `struct AllBusesResponse`;
 * `ostream& operator << (ostream& os, const AllBusesResponse& r)`.
 
-4. `responses.cpp`: определения всего, что объявлено в `responses.h`
+4. `responses.cpp`: определения всего, что объявлено в `responses.h`;
 
-5. `bus_manager.h`: объявление класса `BusManager`
+5. `bus_manager.h`: объявление класса `BusManager`;
 
-6. `bus_manager.cpp`: определения методов класса `BusManager`
+6. `bus_manager.cpp`: определения методов класса `BusManager`;
 
-7. `main.cpp`: функция `main`
+7. `main.cpp`: функция `main`.
 
 Как отправлять проект на проверку
 

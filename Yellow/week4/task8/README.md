@@ -69,6 +69,7 @@ int main() {
   return 0;
 }
 ```
+#### Вывод
 
 ```objectivec
 0 1 4 4 4 5 6 6 7
